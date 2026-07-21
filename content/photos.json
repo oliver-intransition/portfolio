@@ -76,5 +76,18 @@
     "lens": "55-300mm f/4.5-5.6",
     "settings": "f/5.6, 1/250s, ISO 800",
     "featured": false
+  },
+  {
+    "id": "gartered-trogon",
+    "src": "/images/photography/gartered-trogon.jpg",
+    "width": 2000,
+    "height": 1333,
+    "title": "Gartered Trogon",
+    "location": "Mexico",
+    "species": "Gartered Trogon",
+    "camera": "Nikon D3300",
+    "lens": "55-300mm f/4.5-5.6",
+    "settings": "f/5.6, 1/1000s, ISO 500",
+    "featured": false
   }
 ]
