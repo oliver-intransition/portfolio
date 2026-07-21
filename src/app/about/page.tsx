@@ -18,30 +18,16 @@ export default function AboutPage() {
       <div className="prose prose-neutral dark:prose-invert prose-headings:font-medium prose-headings:tracking-tight mt-8 max-w-none">
         <h2>Background</h2>
         <p>
-          I trained in biology before moving into data analytics, and that
-          combination has shaped how I approach most problems: start from the
-          system&apos;s underlying mechanics, then let the data confirm or
-          complicate the story. I&apos;ve worked with conservation nonprofits,
-          research groups, and small analytics teams, usually on projects
-          where the data is messy, the stakes are real, and the question
-          matters more than the tool.
+          A recent Biology Master's graduate from the University of Oxford, I am passionate about the intersection of 
+          technology, data, and applications of Biology in the real world. My Master's project designed a framework for
+          mitigating bird collisions with wind turbines using an understanding of avian biomechanics and visual 
+          physiology. I believe that societal progress is driven by interdisciplinary collaboration and technology.
         </p>
 
         <h2>Interests</h2>
         <p>
-          Outside of client work, I read and write about philosophy of
-          science — particularly questions about explanation, reduction, and
-          how confident we should be in models of complex systems. I spend as
-          much time as I can outdoors with a camera, usually somewhere cold,
-          waiting for something to move.
-        </p>
-
-        <h2>Current work</h2>
-        <p>
-          I&apos;m currently focused on applied analytics for ecological and
-          conservation datasets — building pipelines, dashboards, and models
-          that hold up under scrutiny, and writing about the parts of the
-          process that don&apos;t usually make it into the final report.
+          Outside of client work, I read and write about philosophy, commercial insights, and applications of biology in 
+          the real world. I hope you find my projects, photography, and essays of value.
         </p>
       </div>
     </div>
