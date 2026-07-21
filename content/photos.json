@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "green-backed-tit",
+    "src": "/images/photography/green-backed-tit.jpg",
+    "width": 2000,
+    "height": 1333,
+    "title": "Green-backed Tit",
+    "location": "China",
+    "species": "Green-backed Tit",
+    "camera": "Nikon D3300",
+    "lens": "55-300mm f/4.5-5.6",
+    "settings": "f/5.6, 1/250s, ISO 800",
+    "featured": true
+  }
+]
