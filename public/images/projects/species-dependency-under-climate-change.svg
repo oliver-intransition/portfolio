@@ -1,0 +1,58 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef1ee"/>
+      <stop offset="100%" stop-color="#f7f8f6"/>
+    </linearGradient>
+    <linearGradient id="ridgeBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c7d0c8"/>
+      <stop offset="100%" stop-color="#c7d0c8"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fae9f"/>
+      <stop offset="100%" stop-color="#9fae9f"/>
+    </linearGradient>
+    <linearGradient id="ridgeFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4d5f4f"/>
+      <stop offset="100%" stop-color="#3a4a3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+
+  <!-- topographic contour lines -->
+  <g stroke="#355e3b" stroke-width="1.5" fill="none" opacity="0.16">
+    <path d="M -50 560 C 250 520, 450 600, 750 540 S 1250 560, 1650 500"/>
+    <path d="M -50 610 C 300 570, 500 650, 800 590 S 1300 610, 1650 550"/>
+    <path d="M -50 660 C 350 620, 550 700, 850 640 S 1350 660, 1650 600"/>
+  </g>
+
+  <!-- back ridge -->
+  <path d="M0 620 L120 500 L230 580 L340 430 L460 560 L600 470 L720 590 L860 440 L980 570 L1120 480 L1260 600 L1400 470 L1600 580 L1600 1000 L0 1000 Z" fill="url(#ridgeBack)"/>
+  <!-- snow caps back -->
+  <g fill="#f2f5f1" opacity="0.9">
+    <path d="M340 430 L370 470 L400 445 L430 480 L460 460 L460 460 L430 480 L400 445 L370 470 Z"/>
+    <path d="M860 440 L895 480 L925 452 L955 486 L985 460 L920 460 Z"/>
+    <path d="M1400 470 L1430 505 L1460 480 L1490 512 L1520 488 L1450 488 Z"/>
+  </g>
+
+  <!-- mid ridge -->
+  <path d="M0 700 L150 600 L300 680 L470 560 L620 660 L800 570 L960 680 L1140 590 L1300 690 L1470 600 L1600 660 L1600 1000 L0 1000 Z" fill="url(#ridgeMid)"/>
+  <g fill="#e7ede6" opacity="0.85">
+    <path d="M470 560 L500 595 L530 568 L560 600 L590 575 L520 575 Z"/>
+    <path d="M1140 590 L1170 622 L1200 597 L1230 628 L1260 605 L1190 605 Z"/>
+  </g>
+
+  <!-- front ridge -->
+  <path d="M0 820 L180 730 L360 800 L560 720 L760 810 L980 730 L1180 815 L1400 735 L1600 800 L1600 1000 L0 1000 Z" fill="url(#ridgeFront)"/>
+
+  <!-- distribution / presence points -->
+  <g>
+    <circle cx="430" cy="480" r="6" fill="#f7f8f6" opacity="0.9"/>
+    <circle cx="430" cy="480" r="14" fill="none" stroke="#f7f8f6" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="980" cy="500" r="6" fill="#f7f8f6" opacity="0.9"/>
+    <circle cx="980" cy="500" r="14" fill="none" stroke="#f7f8f6" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="1220" cy="620" r="5" fill="#f7f8f6" opacity="0.8"/>
+    <circle cx="700" cy="640" r="5" fill="#f7f8f6" opacity="0.8"/>
+  </g>
+</svg>

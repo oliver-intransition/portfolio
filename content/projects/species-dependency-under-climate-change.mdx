@@ -1,0 +1,30 @@
+---
+title: "Species Dependency Under Climate Change"
+summary: "A spatial modeling framework exploring how the fates of two dependent species — the snow leopard and its primary prey, the blue sheep — are linked under future climate scenarios."
+skills: ["Species Distribution Modeling", "Spatial Statistics", "Conservation Ecology"]
+tools: ["R", "GLMs", "Bioclimatic Variables"]
+date: "2026-04-13"
+cover: "/images/projects/species-dependency-under-climate-change.svg"
+tags: ["Ecology", "R", "Climate Change", "Conservation"]
+featured: true
+---
+
+Predator and prey rarely respond to a changing climate in the same way — yet conservation planning often treats species in isolation. This project builds a framework for modeling how the distributions of two ecologically dependent species shift together under future climate conditions, using the snow leopard and blue sheep as a case study.
+
+## Approach
+
+I first modeled the current distributions of both species independently using presence data and binomial GLMs, correlating occurrence against all 19 WorldClim bioclimatic variables. Pseudo-absence points were generated within a defined geographic extent to support the presence/absence framework.
+
+Continuous probability surfaces were converted to binary presence/absence maps using a prevalence threshold, and I overlaid these to identify current regions of range overlap.
+
+## Modeling interspecies dependency
+
+To move beyond a simple spatial overlap, I designed a weighted overlap metric — the product of both species' predicted probabilities, weighted by their individual occurrence probabilities — and used this to fit a third, "interspecies" GLM. This quantifies the statistical dependency between snow leopard and blue sheep distributions directly, rather than assuming it from overlap alone.
+
+Both individual species distribution models (SDMs) and the interspecies model were then projected onto future climate layers, visualizing how the compound effect of climate change reshapes not just individual ranges, but the spatial relationship between predator and prey.
+
+## Why it matters
+
+Conservation strategies aimed at a single flagship species — such as the snow leopard — can fail if they don't account for the full ecological web the species depends on. This framework offers a way to explicitly model and visualize that dependency, supporting more integrated, climate-aware conservation planning.
+
+[View the code on GitHub →](https://github.com/oliver-intransition/species-dependency-under-climate-change)
