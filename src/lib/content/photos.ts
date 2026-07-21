@@ -14,3 +14,9 @@ export function getFeaturedPhoto(): Photo | undefined {
   const all = getAllPhotos();
   return all.find((p) => p.featured) ?? all[0];
 }
+
+export function getFeaturedPhotos(limit = 2): Photo[] {
+  const all = getAllPhotos();
+  const featured = all.filter((p) => p.featured);
+  return (featured.length ? featured : all).slice(0, limit);
+}

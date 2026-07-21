@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { siteConfig } from "@/lib/site.config";
 import { getFeaturedProjects } from "@/lib/content/projects";
 import { getFeaturedEssay } from "@/lib/content/essays";
-import { getFeaturedPhoto } from "@/lib/content/photos";
+import { getFeaturedPhotos } from "@/lib/content/photos";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { Badge } from "@/components/ui/Badge";
 import { formatDate } from "@/lib/utils";
@@ -12,7 +12,7 @@ import { formatDate } from "@/lib/utils";
 export default function Home() {
   const featuredProjects = getFeaturedProjects(3);
   const featuredEssay = getFeaturedEssay();
-  const featuredPhoto = getFeaturedPhoto();
+  const featuredPhotos = getFeaturedPhotos(featuredEssay ? 1 : 2);
 
   return (
     <div className="mx-auto max-w-4xl px-6">
@@ -63,7 +63,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* Featured essay + photo */}
+      {/* Featured essay + photo(s) */}
       <section className="grid gap-8 border-t border-border py-16 sm:grid-cols-2">
         {featuredEssay && (
           <Link
@@ -91,14 +91,15 @@ export default function Home() {
           </Link>
         )}
 
-        {featuredPhoto && (
+        {featuredPhotos.map((photo) => (
           <Link
+            key={photo.id}
             href="/photography"
             className="group relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-xl border border-border p-6"
           >
             <Image
-              src={featuredPhoto.src}
-              alt={featuredPhoto.title}
+              src={photo.src}
+              alt={photo.title}
               fill
               sizes="(min-width: 640px) 50vw, 100vw"
               className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
@@ -109,14 +110,14 @@ export default function Home() {
                 Featured photograph
               </p>
               <h3 className="mt-2 text-lg font-medium text-white">
-                {featuredPhoto.title}
+                {photo.title}
               </h3>
               <p className="mt-1 text-sm text-white/70">
-                {featuredPhoto.species} · {featuredPhoto.location}
+                {photo.species} · {photo.location}
               </p>
             </div>
           </Link>
-        )}
+        ))}
       </section>
     </div>
   );
