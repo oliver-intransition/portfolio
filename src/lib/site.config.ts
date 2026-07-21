@@ -12,9 +12,9 @@ export const siteConfig = {
   intro:
     "I work at the intersection of data, life sciences, and ideas — building analytics tools, writing about biology and philosophy, and photographing wildlife in the field.",
   social: {
-    github: "https://github.com/oliverdonald",
-    linkedin: "https://www.linkedin.com/in/oliverdonald",
-    email: "hello@example.com",
+    github: "https://github.com/oliver-intransition",
+    linkedin: "https://www.linkedin.com/in/oliver-donald-09500725a",
+    email: "olivervjd@gmail.com",
   },
   nav: [
     { href: "/", label: "Home" },
