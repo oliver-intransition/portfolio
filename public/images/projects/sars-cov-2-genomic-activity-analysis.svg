@@ -1,0 +1,40 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f4f1"/>
+      <stop offset="100%" stop-color="#f7f8f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky2)"/>
+
+  <!-- faint sampling grid -->
+  <g stroke="#355e3b" stroke-width="1" opacity="0.08">
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="800" x2="1600" y2="800"/>
+    <line x1="200" y1="0" x2="200" y2="1000"/>
+    <line x1="500" y1="0" x2="500" y2="1000"/>
+    <line x1="800" y1="0" x2="800" y2="1000"/>
+    <line x1="1100" y1="0" x2="1100" y2="1000"/>
+    <line x1="1400" y1="0" x2="1400" y2="1000"/>
+  </g>
+
+  <!-- stacked lineage streams -->
+  <path d="M0 760 C 200 700, 350 780, 550 720 S 900 640, 1100 700 S 1400 760, 1600 700 L1600 1000 L0 1000 Z" fill="#c7d0c8" opacity="0.9"/>
+  <path d="M0 820 C 220 780, 380 850, 600 800 S 950 730, 1150 790 S 1420 840, 1600 800 L1600 1000 L0 1000 Z" fill="#9fae9f" opacity="0.9"/>
+  <path d="M0 890 C 240 860, 420 920, 640 880 S 980 830, 1180 870 S 1430 900, 1600 870 L1600 1000 L0 1000 Z" fill="#4d5f4f" opacity="0.95"/>
+
+  <!-- two comparison lines representing separate data sources -->
+  <path d="M0 560 C 220 500, 400 610, 620 520 S 980 420, 1200 500 S 1450 560, 1600 480" fill="none" stroke="#355e3b" stroke-width="3" opacity="0.75"/>
+  <path d="M0 600 C 200 560, 420 500, 620 590 S 960 600, 1200 540 S 1440 480, 1600 540" fill="none" stroke="#355e3b" stroke-width="3" stroke-dasharray="10 10" opacity="0.5"/>
+
+  <!-- sample point markers -->
+  <g fill="#f7f8f6" stroke="#355e3b" stroke-width="1.5">
+    <circle cx="220" cy="500" r="6"/>
+    <circle cx="620" cy="520" r="6"/>
+    <circle cx="980" cy="420" r="6"/>
+    <circle cx="1450" cy="560" r="6"/>
+  </g>
+</svg>

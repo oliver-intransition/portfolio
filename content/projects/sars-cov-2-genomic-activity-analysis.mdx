@@ -1,0 +1,30 @@
+---
+title: "SARS-CoV-2 Genomic Activity Analysis"
+summary: "Comparing two independent UK genomic surveillance datasets to examine how sampling strategy shapes our understanding of SARS-CoV-2 variant dynamics."
+skills: ["Genomic Surveillance", "Data Wrangling", "Time-Series Visualization"]
+tools: ["R", "ONS-CIS", "COG-UK"]
+date: "2026-04-13"
+cover: "/images/projects/sars-cov-2-genomic-activity-analysis.svg"
+tags: ["Genomics", "R", "Epidemiology", "COVID-19"]
+featured: true
+---
+
+Genomic surveillance data is only as reliable as the sampling strategy behind it. This project compares two independent UK data sources for SARS-CoV-2 lineage tracking — the ONS Coronavirus Infection Survey (ONS-CIS) and COG-UK — to examine how differences in sampling design influence our understanding of variant succession.
+
+## Tracking lineage succession
+
+I defined a set of major SARS-CoV-2 lineages and visualized their absolute counts over time to demonstrate lineage succession as new variants displaced old ones. To make comparisons independent of total case volume, I computed weekly relative frequencies and plotted these as a stacked area chart, isolating how each lineage's *share* of circulating virus changed over time.
+
+## Comparing sampling strategies
+
+The core of the analysis compares ONS-CIS, a randomized community surveillance survey, against COG-UK, which draws from a broader but less systematically sampled pool of sequenced cases.
+
+I aggregated daily ONS-CIS counts per lineage, computed frequencies, and binned these into 10-day intervals to reduce noise. I then extracted the BA.2 trajectory from COG-UK data, aligned the two datasets' column structures, and merged them into a single combined plot overlaying both sources.
+
+This revealed systematic biases between the two approaches — for example, processing delays at specific sequencing labs shifted the apparent timing of variant detection in COG-UK relative to the more consistently sampled ONS-CIS data.
+
+## Why it matters
+
+Public health decisions during an outbreak often rely on genomic surveillance data without close scrutiny of how that data was collected. This analysis shows that sampling methodology alone can shift the apparent timeline of variant emergence — a critical consideration for anyone interpreting or acting on genomic surveillance trends.
+
+[View the code on GitHub →](https://github.com/oliver-intransition/SARS-CoV-2-genomic-activity-analysis)
